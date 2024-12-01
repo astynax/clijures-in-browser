@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hello, ClJS</title>
+    <style type="text/css" media="screen">
+      #container > div > span {
+        font-size: 50px;
+      }
+      #container > div > button {
+        height: 50px;
+        font-size: 30px;
+      }
+    </style>
+
+    <script async src="https://ga.jspm.io/npm:es-module-shims@1.5.9/dist/es-module-shims.js"></script>
+    <script type="importmap">
+      {
+        "imports": {
+          "cherry-cljs/cljs.core.js": "https://cdn.jsdelivr.net/npm/cherry-cljs@0.0.0-alpha.36/cljs.core.js"
+        }
+      }
+    </script>
+    <script type="module" src="core.mjs"></script>
+
+  </head>
+  <body>
+    <div id="container"></div>
+  </body>
+</html>
